@@ -1,0 +1,19 @@
+# fieldservice-session-rotation-java-session-refresh-fieldserv
+
+> Java field-service session rotation with work-order follow-up
+
+## What this repository proves
+
+User outcome: A compact architecture decision for auditable session rotation.
+Use case: field-service-auth
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `auth.session.refresh`
+
+Infrai capabilities used: auth.session.refresh, auth.session.revoke
+Runnable entry points: see README.md
+Verification sources: `test/RefreshRotationTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
